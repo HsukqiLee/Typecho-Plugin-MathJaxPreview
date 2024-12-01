@@ -40,7 +40,7 @@ class MathJaxPreview_Plugin implements Typecho_Plugin_Interface
         $extensionsArray = explode(',', $extensions);
         $extensionsJson = json_encode($extensionsArray);
 
-        $jsUrl = 'https://cdn.tsinbei.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
+        $jsUrl = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
         echo '<script src="' . $jsUrl . '"></script>';
         echo '<script>
             MathJax.Hub.Config({
